@@ -1012,7 +1012,7 @@ class ClusterManager:
         """Reset compute resources which insufficient_capacity_timeout expired."""
         # Find insufficient_capacity_timeout compute resources
         if not self._insufficient_capacity_compute_resources:
-            return
+            returnf
         log.info(
             "The following compute resources are in down state due to insufficient capacity: %s, "
             "compute resources will be reset after insufficient capacity timeout (%s seconds) expired",
