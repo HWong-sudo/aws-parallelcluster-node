@@ -403,3 +403,4 @@ def run_instances(region, boto3_config, run_instances_kwargs):
     except ImportError:
         ec2_client = boto3.client("ec2", region_name=region, config=boto3_config)
         return ec2_client.run_instances(**run_instances_kwargs)
+
